@@ -2,8 +2,10 @@
     <div>
         <div class="hd-top">
             <div class="search-wrap">
-                <Icon type="ios-search" size="40"></Icon>
-                <input type="text" placeholder="搜索：目的地/酒店/经典/航班号">
+                <router-link to="/search">
+                    <Icon type="ios-search" size="40"></Icon>
+                    <input type="text" placeholder="搜索：目的地/酒店/经典/航班号">
+                </router-link>
             </div>
             <div class="my-wrap">
                 <Icon type="ios-person-outline" size="50"></Icon>
@@ -217,8 +219,10 @@ export default {
             border-radius: 30px;
             margin: 0 15px;
             background: #fff;
-            display: flex;
-            align-items: center;
+            a{
+                display: flex;
+                align-items: center;
+            }
             i{
                 margin:0 20px;
             }

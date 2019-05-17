@@ -14,6 +14,10 @@ export default {
 
 <style lang="scss">
   #app,body{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
     background-color: #fafafc;
   }
 </style>

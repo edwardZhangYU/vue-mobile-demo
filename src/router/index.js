@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import ScenicSpot from '@/components/ScenicSpot'
+import Search from '@/components/Search'
 import NotFound from '@/components/NotFound'
 
 Vue.use(Router)
@@ -20,6 +21,10 @@ export default new Router({
       path:'/scenicSpot',
       name:'ScenicSpot',
       component:ScenicSpot
+    },{
+      path:'/search',
+      name:'Search',
+      component:Search
     }
   ]
 })

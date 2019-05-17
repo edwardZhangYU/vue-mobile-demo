@@ -11,6 +11,9 @@ import 'iview/dist/styles/iview.css';    // 使用 CSS
 
 Vue.use(iView);
 
+import vueTap from 'v-tap';
+Vue.use(vueTap);
+
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
