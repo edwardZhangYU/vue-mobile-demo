@@ -22,7 +22,7 @@
         </div>
         <ul class="classify">
             <li>
-                <router-link to="/scenicSpot">
+                <router-link to="/hotService">
                     <div></div>
                     <span>攻略·景点</span>
                 </router-link>

@@ -16,13 +16,21 @@
     </div>
 </template>
 <script>
+import { mapActions } from 'vuex'
+
 export default {
     data(){
         return{
-            hotTags:['你好','旅游']
+            
+        }
+    },
+    computed: {
+        hotTags(){
+            return this.$store.state.hotTags
         }
     },
     created() {
+        this.setHotTags()
         console.log(this.$router)
     },
     methods:{
@@ -34,7 +42,10 @@ export default {
         },
         searchFromBtn(){
             console.log(this.$refs.input.value)
-        }
+        },
+        ...mapActions([
+            'setHotTags'
+        ])
     }
 }
 </script>

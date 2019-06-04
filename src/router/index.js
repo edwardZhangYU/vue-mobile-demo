@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import ScenicSpot from '@/components/ScenicSpot'
+import HotService from '@/components/HotService'
 import Search from '@/components/Search'
 import NotFound from '@/components/NotFound'
 
@@ -18,9 +18,9 @@ export default new Router({
       name:'NotFound',
       component:NotFound
     },{
-      path:'/scenicSpot',
-      name:'ScenicSpot',
-      component:ScenicSpot
+      path:'/hotService',
+      name:'HotService',
+      component:HotService
     },{
       path:'/search',
       name:'Search',

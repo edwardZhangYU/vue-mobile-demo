@@ -7,5 +7,8 @@ export default {
     closeAlertFunc(state){
         state.showAlertFlag = false
         state.alertMsg = ''
+    },
+    setHotTags(state,data){
+        state.hotTags = data
     }
 }
